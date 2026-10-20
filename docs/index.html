@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NEXORA — votre launcher gaming et social</title>
+    <meta name="description" content="NEXORA réunit tous vos jeux PC (Steam, Epic, Xbox, GOG, Ubisoft, EA, Battle.net, Riot…) dans un seul launcher, avec vos amis, messages, communautés et salons vocaux. Gratuit, pour Windows." />
+    <meta property="og:title" content="NEXORA — votre launcher gaming et social" />
+    <meta property="og:description" content="Tous vos jeux PC au même endroit, avec vos amis, messages et salons vocaux." />
+    <meta property="og:image" content="assets/home.png" />
+    <meta name="theme-color" content="#0b0c12" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="#">
+        <img src="assets/logo.svg" width="30" height="30" alt="" />
+        <span>NEXORA</span>
+      </a>
+      <nav aria-label="Sections">
+        <a href="#fonctions">Fonctions</a>
+        <a href="#apercu">Aperçu</a>
+        <a href="#installer">Installer</a>
+        <a href="#faq">Questions</a>
+      </nav>
+      <a class="btn btn-small" href="#telecharger" data-download>Télécharger</a>
+    </header>
+
+    <main>
+      <section class="hero" id="telecharger">
+        <div class="hero-text">
+          <p class="kicker">Gratuit · Windows 10 et 11</p>
+          <h1>Tous vos jeux.<br /><span class="grad">Tous vos amis.</span></h1>
+          <p class="lead">
+            NEXORA rassemble les jeux de Steam, Epic, Xbox, GOG, Ubisoft, EA, Battle.net, Riot et vos émulateurs dans une seule bibliothèque, avec vos amis, vos messages, vos communautés et des salons vocaux.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#" data-download id="download-main">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              <span>Télécharger pour Windows</span>
+            </a>
+            <a class="btn btn-ghost" href="#" id="download-portable">Version portable</a>
+          </div>
+          <p class="release" id="release-info" aria-live="polite">Recherche de la dernière version…</p>
+        </div>
+        <div class="hero-shot">
+          <img src="assets/home.png" alt="Accueil gaming de NEXORA (bibliothèque de démonstration)" width="1440" height="900" />
+        </div>
+      </section>
+
+      <section class="section" id="fonctions">
+        <h2>Ce que fait NEXORA</h2>
+        <div class="features">
+          <article>
+            <h3>Une seule bibliothèque</h3>
+            <p>Détection automatique de vos launchers et de vos jeux installés, lancement en un clic, temps de jeu, favoris, collections et recherche instantanée.</p>
+          </article>
+          <article>
+            <h3>Vos amis et vos messages</h3>
+            <p>Amis, présence, ce à quoi chacun joue (si vous le choisissez), messages privés et de groupe en temps réel.</p>
+          </article>
+          <article>
+            <h3>Salons vocaux</h3>
+            <p>Appels privés et salons de communauté jusqu’à 8 personnes, audio chiffré, réduction de bruit, sonnerie et option pour masquer votre adresse IP.</p>
+          </article>
+          <article>
+            <h3>Communautés et événements</h3>
+            <p>Créez votre club, publiez, organisez des soirées de jeu et des tournois, avec des rôles et des outils de modération.</p>
+          </article>
+          <article>
+            <h3>Party Finder</h3>
+            <p>Trouvez des coéquipiers par jeu, langue, plateforme et style de jeu, puis lancez le jeu directement depuis NEXORA.</p>
+          </article>
+          <article>
+            <h3>Pensé pour les joueurs</h3>
+            <p>Game Galaxy, Smart Pick, statistiques de jeu, Disk Radar, mode console à la manette, thèmes personnalisables et mode Ne pas déranger.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="apercu">
+        <h2>Aperçu</h2>
+        <p class="muted">Captures de l’application avec la bibliothèque de démonstration.</p>
+        <div class="gallery">
+          <figure><img src="assets/library.png" alt="Bibliothèque" loading="lazy" width="1440" height="900" /><figcaption>Bibliothèque</figcaption></figure>
+          <figure><img src="assets/galaxy.png" alt="Game Galaxy" loading="lazy" width="1440" height="900" /><figcaption>Game Galaxy</figcaption></figure>
+          <figure><img src="assets/console.png" alt="Mode console" loading="lazy" width="1920" height="1080" /><figcaption>Mode console (manette)</figcaption></figure>
+          <figure><img src="assets/picks.png" alt="Smart Pick" loading="lazy" width="1440" height="900" /><figcaption>Smart Pick</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="section" id="installer">
+        <h2>Installer NEXORA</h2>
+        <ol class="steps">
+          <li>
+            <strong>Téléchargez</strong> l’installateur avec le bouton ci-dessus.
+          </li>
+          <li>
+            <strong>Lancez-le.</strong> Windows peut afficher « Windows a protégé votre ordinateur » : NEXORA n’est pas encore signé numériquement. Cliquez sur <em>Informations complémentaires</em>, puis <em>Exécuter quand même</em>.
+          </li>
+          <li>
+            <strong>C’est installé.</strong> Aucune question, aucun droit administrateur : NEXORA s’ouvre, trouve vos jeux et vous propose de créer votre compte pour retrouver vos amis.
+          </li>
+          <li>
+            <strong>Les mises à jour sont automatiques.</strong> Elles se téléchargent en arrière-plan et s’installent quand vous redémarrez NEXORA.
+          </li>
+        </ol>
+        <p class="muted small">Configuration : Windows 10 ou 11, 64 bits. Environ 100 Mo. Un micro pour les salons vocaux.</p>
+      </section>
+
+      <section class="section" id="faq">
+        <h2>Questions fréquentes</h2>
+        <details>
+          <summary>NEXORA est-il gratuit ?</summary>
+          <p>Oui.</p>
+        </details>
+        <details>
+          <summary>Mes jeux et mon temps de jeu sont-ils envoyés en ligne ?</summary>
+          <p>Non. Votre bibliothèque, vos statistiques et vos fichiers restent sur votre PC. Le titre du jeu en cours n’est partagé avec vos amis que si vous l’activez. Aucun nom de processus n’est jamais envoyé.</p>
+        </details>
+        <details>
+          <summary>Faut-il un compte ?</summary>
+          <p>Pas pour la partie gaming. Un compte (e-mail et mot de passe) est nécessaire pour les amis, messages, communautés et salons vocaux.</p>
+        </details>
+        <details>
+          <summary>Les messages et appels sont-ils privés ?</summary>
+          <p>Les appels sont chiffrés de bout en bout entre participants et ne sont jamais enregistrés. Les messages sont protégés par des permissions vérifiées par le serveur et chiffrés pendant le transport, mais ils ne sont pas chiffrés de bout en bout.</p>
+        </details>
+        <details>
+          <summary>Pourquoi Windows affiche-t-il un avertissement ?</summary>
+          <p>Un certificat de signature de code est payant chaque année ; NEXORA n’en a pas encore. L’installateur est publié uniquement sur ce site, et chaque mise à jour est vérifiée par son empreinte de contrôle avant installation.</p>
+        </details>
+        <details>
+          <summary>Comment désinstaller ?</summary>
+          <p>Paramètres Windows › Applications › NEXORA › Désinstaller. Vos jeux ne sont jamais modifiés. Pour effacer aussi votre compte, utilisez d’abord « Supprimer le compte » dans Mon profil.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>NEXORA</span>
+      <a href="#" id="all-releases">Toutes les versions et nouveautés</a>
+    </footer>
+  </body>
+</html>
